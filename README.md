@@ -45,7 +45,7 @@ The alarm has a configurable cooldown to prevent repeated alerts for the same co
 
 ## Dataset
 
-This project uses the [Animal Dataset with 15 Classes of Animals](https://www.kaggle.com/datasets/mkstar1/animal-dataset-with-15-classes-of-animals) from Kaggle.
+This project uses the [Animal Dataset with 15 Classes of Animals](https://www.kaggle.com/datasets/mkstar1/animal-dataset-with-15-classes-of-animals/data) from Kaggle.
 
 - **Classes:** 15 animal categories
 - **Total images used:** 9,084
@@ -53,18 +53,24 @@ This project uses the [Animal Dataset with 15 Classes of Animals](https://www.ka
 
 Dataset attribution and licensing terms are provided by the original Kaggle publisher. Review those terms before redistributing the dataset or derivative assets.
 
-## Trained model
+## Training resources
 
-Download the trained LiteRT/TFLite model from [Google Drive](https://drive.google.com/file/d/1x775Y3WHO2uMQF8nvycQq1WDQwbUYugf/view?usp=sharing).
+The following resources make the dataset, training workflow, and deployment model available for inspection and reproduction:
 
-**Model details:**
+| Resource | Link |
+|---|---|
+| Dataset | [Animal Dataset with 15 Classes of Animals – Kaggle](https://www.kaggle.com/datasets/mkstar1/animal-dataset-with-15-classes-of-animals/data) |
+| Training notebook | [Open Google Colab notebook](https://colab.research.google.com/drive/1_4D-_kI7KrYNnb_NAQ9b9YUDVNu9p2MQ?usp=drive_link) |
+| Trained model | [Download `crop_raider_model.tflite`](https://drive.google.com/file/d/1x775Y3WHO2uMQF8nvycQq1WDQwbUYugf/view?usp=drive_link) |
+
+### Trained model details
 
 - **Format:** LiteRT / TFLite
 - **Input size:** 224 × 224
 - **Classes:** 15
 - **Filename:** `crop_raider_model.tflite`
 
-After downloading, place the file at:
+If the model is downloaded separately, place it at:
 
 ```text
 models/crop_raider_model.tflite
@@ -144,11 +150,7 @@ Classes: 15
 Export format: LiteRT (.tflite)
 ```
 
-The exported model is included at `models/crop_raider_model.tflite`. Add the shareable Google Colab notebook URL here before public release so that the dataset preparation, training command, evaluation output, and export steps can be reproduced:
-
-```text
-Google Colab notebook: <add-public-notebook-url>
-```
+The [Google Colab training notebook](https://colab.research.google.com/drive/1_4D-_kI7KrYNnb_NAQ9b9YUDVNu9p2MQ?usp=drive_link) contains the dataset preparation, training workflow, evaluation output, and model export steps. The exported model is included at `models/crop_raider_model.tflite`.
 
 ## Hardware wiring
 
