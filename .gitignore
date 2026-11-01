@@ -32,6 +32,10 @@ captured/*
 test_images/*
 !test_images/.gitkeep
 
+# Public project assets
+!assets/
+!assets/crop-raider-banner.png
+
 # Operating system files
 .DS_Store
 Thumbs.db

@@ -1,4 +1,13 @@
-# Offline Edge AI Crop Raider Alert System
+<p align="center">
+  <img src="assets/crop-raider-banner.png" alt="Crop Raider Alert - Offline Edge AI Crop Protection System" width="100%">
+</p>
+
+<h1 align="center">Crop Raider Alert</h1>
+
+<p align="center">
+  Offline Edge AI-Powered Animal Classification<br>
+  and Crop Protection System
+</p>
 
 > **Autonomous crop protection at the edge — no cloud connection required.**
 
@@ -183,6 +192,8 @@ Power down the Raspberry Pi before wiring. Use a common ground, follow each modu
 
 ```text
 .
+├── assets/
+│   └── crop-raider-banner.png    # GitHub README project banner
 ├── main.py                         # Live camera, inference, GPIO, and snapshots
 ├── predict_image.py                # Laptop-friendly single-image smoke test
 ├── requirements.txt                # Python dependencies
