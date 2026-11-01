@@ -43,6 +43,33 @@ Highest prediction score >= 70%?
 
 The alarm has a configurable cooldown to prevent repeated alerts for the same continuous event. The system uses the highest-scoring class from the classifier output and validates that the model returns exactly 15 scores before continuing.
 
+## Dataset
+
+This project uses the [Animal Dataset with 15 Classes of Animals](https://www.kaggle.com/datasets/mkstar1/animal-dataset-with-15-classes-of-animals) from Kaggle.
+
+- **Classes:** 15 animal categories
+- **Total images used:** 9,084
+- **Purpose:** training, validation, and testing of the animal classification model
+
+Dataset attribution and licensing terms are provided by the original Kaggle publisher. Review those terms before redistributing the dataset or derivative assets.
+
+## Trained model
+
+Download the trained LiteRT/TFLite model from [Google Drive](https://drive.google.com/file/d/1x775Y3WHO2uMQF8nvycQq1WDQwbUYugf/view?usp=sharing).
+
+**Model details:**
+
+- **Format:** LiteRT / TFLite
+- **Input size:** 224 × 224
+- **Classes:** 15
+- **Filename:** `crop_raider_model.tflite`
+
+After downloading, place the file at:
+
+```text
+models/crop_raider_model.tflite
+```
+
 ## Model and class contract
 
 The application expects this local model file:
@@ -92,7 +119,7 @@ The classifier was trained for 10 epochs. The recorded training loss and validat
 | 9 | 0.1521 | 96.4% |
 | 10 | 0.1422 | 96.4% |
 
-### Dataset summary
+### Dataset split summary
 
 | Split | Images |
 |---|---:|
