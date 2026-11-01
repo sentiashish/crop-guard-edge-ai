@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Virtual environments
+venv/
+env/
+cropenv/
+.venv/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Captured images and runtime output
+snapshots/
+captured/*
+!captured/.gitkeep
+
+# Local test images
+test_images/*
+!test_images/.gitkeep
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/

@@ -1,0 +1,4 @@
+opencv-python
+numpy
+ai-edge-litert
+gpiozero
